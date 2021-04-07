@@ -1,0 +1,35 @@
+#search{
+    text-align: center;
+}
+
+input{
+    margin: 20px auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px
+}
+
+#grid article{
+    background: grey;
+    border:1px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+#grid div{
+    margin: 10px auto;
+}
+
+#grid button{
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 800px){
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

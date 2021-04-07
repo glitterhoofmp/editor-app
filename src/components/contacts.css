@@ -1,0 +1,27 @@
+#contacts select {
+    width: 150px;
+}
+
+#contacts #info{
+    margin: auto 20px;
+    margin-top: 20px;
+}
+
+#contacts #info img{
+    max-width: 100%;
+}
+
+#contacts #info div{
+    font-size: 14pt; 
+}
+
+#contacts{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contacts #message #text{
+    max-width: 240px;
+    width: 200px;
+    height: 100px;
+}

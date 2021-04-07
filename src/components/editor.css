@@ -1,0 +1,105 @@
+#editor{
+    display: grid;
+    grid-template-areas: 
+    "tools canvas header"
+    "tools canvas settings";
+    grid-template-columns: 80px 15fr 200px;
+    grid-template-rows: 50px 500px;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    margin: 0px;
+}
+
+#editor section{
+    border: 1px solid black;
+}
+
+#editor #layers ul{
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+#editor #layers ul li{
+    margin-top: 5px;
+}
+
+#editor #tools{
+    grid-area: tools;
+    background: gray;
+}
+
+#editor section h3{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#editor #buttons{
+    display: flex;
+    flex-direction: column
+}
+
+#editor button{
+    margin: 10px auto;
+    padding: auto;
+}
+
+#editor #canvas{
+    grid-area: canvas;
+    min-width: 0px;
+    overflow: auto;
+}
+
+canvas{
+    border: 1px solid black;
+}
+
+#editor header{
+    display: flex;
+    justify-content: space-around;
+    grid-area: header;
+    border: 1px solid black;
+    background: gray;
+}
+
+#editor #palette{
+    grid-area: settings;
+    background: gray;
+    align-content: center;
+}
+
+#editor #palette>div{
+    padding: 5px;
+}
+
+#editor #file{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#editor #file + label {
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+}
+
+#editor #form, #editor #submit{
+    margin: auto;
+    padding: auto;
+}
+
+#editor .button{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    padding: 1px;
+    cursor: pointer;
+    border: solid 1px #000000;
+    margin: auto;
+}
